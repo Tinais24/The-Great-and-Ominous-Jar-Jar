@@ -1,4 +1,4 @@
-// 1 - Super Clase do Personagem
+// 1 - Super Classe do Personagem
 
 class Personagem {
 
@@ -25,7 +25,7 @@ class Personagem {
         console.log("O personagem usou uma habilidade.");
     }
 }
-  
+
 // 2. Subclasses dos Personagens
 
 // Classe Jedi
@@ -82,12 +82,29 @@ class Droide extends Personagem {
     }
 }
 
-    console.log("Jedi");
-    const obiWan = new Jedi("Obi-Wan Kenobi", "Stewjon", 95, "Azul");
-    obiWan.apresentar();
-    obiWan.usarHabilidade();
+// Saída esperada aproximada
+// Jedi
+console.log("\nJedi"); // Obi-Wan
+const obiWan = new Jedi("Obi-Wan Kenobi", "Stewjon", 95, "Azul");
+obiWan.apresentar();
+obiWan.usarHabilidade();
 
-    console.log("Sith");
-    const darthVader = new Sith("Darth Jar-Jar", "Naboo", 99, 100);
-    darthVader.apresentar();
-    darthVader.usarHabilidade();
+// Sith
+console.log("\nSith"); // Darth Jar-Jar
+const darthJar = new Sith("Darth Jar-Jar", "Naboo", 99, 100);
+darthJar.apresentar();
+darthJar.usarHabilidade();
+
+// Droide
+console.log("\nDroide");
+const b2RP = new Droide("Droid de Batalha B2-RP ", "Quell", 93, "Operações de ataque");
+b2RP.apresentar();
+b2RP.usarHabilidade();
+
+// Quebra de linha
+console.log("\n");
+
+// Respotas das Questões
+
+
+
